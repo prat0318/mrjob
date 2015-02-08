@@ -46,7 +46,7 @@ except ImportError:
 
 # Should we suppress boto validating a bucket? (2.25.0+ uses a cheap
 #    HEAD request avoids the scaling problem with large buckets)
-VALIDATE_BUCKET = boto and boto.Version >= '2.25.0'
+VALIDATE_BUCKET = False # boto and boto.Version >= '2.25.0'
 
 #: .. deprecated:: 0.4
 is_ironpython = "IronPython" in sys.version
